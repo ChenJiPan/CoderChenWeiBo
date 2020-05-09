@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PostCell: View {
     
-    var weiboModel :WeiboModel
+    @State var weiboModel :WeiboModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
@@ -27,6 +27,8 @@ struct PostCell: View {
                 Spacer()
                 UserPostButton(image: "heart", text: weiboModel.likeCountText, color: weiboModel.isLiked ? Color.red : Color.gray) {
                     print("点赞")
+                    self.weiboModel.isLiked = !self.weiboModel.isLiked
+                    self.weiboModel.likeCount = self.weiboModel.isLiked ? self.weiboModel.likeCount + 1 : self.weiboModel.likeCount - 1
                 }
                 Spacer()
             }

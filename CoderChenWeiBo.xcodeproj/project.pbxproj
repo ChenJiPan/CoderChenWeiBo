@@ -103,6 +103,10 @@
 		27FE7B492463F8B100A474F4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7B482463F8B100A474F4 /* PostCell.swift */; };
 		928789972465633100586C1B /* UserPostPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928789962465633100586C1B /* UserPostPicture.swift */; };
 		92908C3624667E4D00C240E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C3524667E4D00C240E9 /* HomeVC.swift */; };
+		92908C3924668C6D00C240E9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C3824668C6D00C240E9 /* DetailVC.swift */; };
+		92908C3C2466AABC00C240E9 /* RecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C3B2466AABC00C240E9 /* RecommendVC.swift */; };
+		92908C3E2466B39500C240E9 /* NavigationBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C3D2466B39500C240E9 /* NavigationBarTitle.swift */; };
+		92908C412466B7C400C240E9 /* HotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C402466B7C400C240E9 /* HotVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +208,10 @@
 		27FE7B482463F8B100A474F4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		928789962465633100586C1B /* UserPostPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPicture.swift; sourceTree = "<group>"; };
 		92908C3524667E4D00C240E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		92908C3824668C6D00C240E9 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		92908C3B2466AABC00C240E9 /* RecommendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendVC.swift; sourceTree = "<group>"; };
+		92908C3D2466B39500C240E9 /* NavigationBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitle.swift; sourceTree = "<group>"; };
+		92908C402466B7C400C240E9 /* HotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +365,7 @@
 				27FE7B462463EC6900A474F4 /* UserPostButton.swift */,
 				928789962465633100586C1B /* UserPostPicture.swift */,
 				27FE7B482463F8B100A474F4 /* PostCell.swift */,
+				92908C3D2466B39500C240E9 /* NavigationBarTitle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,7 +381,10 @@
 		92908C3324667DDC00C240E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92908C3724668BEC00C240E9 /* Common */,
 				92908C3424667E2600C240E9 /* Home */,
+				92908C3A2466AA9800C240E9 /* Recommend */,
+				92908C3F2466B78E00C240E9 /* Hot */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +395,30 @@
 				92908C3524667E4D00C240E9 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		92908C3724668BEC00C240E9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				92908C3824668C6D00C240E9 /* DetailVC.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		92908C3A2466AA9800C240E9 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				92908C3B2466AABC00C240E9 /* RecommendVC.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		92908C3F2466B78E00C240E9 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				92908C402466B7C400C240E9 /* HotVC.swift */,
+			);
+			path = Hot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,8 +575,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92908C412466B7C400C240E9 /* HotVC.swift in Sources */,
 				27FE7B412463B85F00A474F4 /* WeiboModel.swift in Sources */,
 				27FE7B3E2463B6AB00A474F4 /* UserTitleView.swift in Sources */,
+				92908C3924668C6D00C240E9 /* DetailVC.swift in Sources */,
+				92908C3E2466B39500C240E9 /* NavigationBarTitle.swift in Sources */,
 				27FE7B452463E55600A474F4 /* UserPostView.swift in Sources */,
 				928789972465633100586C1B /* UserPostPicture.swift in Sources */,
 				27FE7A802463A0ED00A474F4 /* AppDelegate.swift in Sources */,
@@ -549,6 +588,7 @@
 				27FE7B3C2463B1CB00A474F4 /* VipView.swift in Sources */,
 				92908C3624667E4D00C240E9 /* HomeVC.swift in Sources */,
 				27FE7B472463EC6900A474F4 /* UserPostButton.swift in Sources */,
+				92908C3C2466AABC00C240E9 /* RecommendVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +728,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoderChenWeiBo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoderChenWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TextCoreMotion.com.CoderChenWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -707,6 +748,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoderChenWeiBo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoderChenWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -714,7 +756,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TextCoreMotion.com.CoderChenWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
