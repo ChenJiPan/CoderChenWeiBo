@@ -27,7 +27,7 @@ struct UserPostButton: View {
                 Text(text).font(.system(size: 15))
             }
             
-        }.foregroundColor(color)
+        }.foregroundColor(color).buttonStyle(BorderlessButtonStyle())
     }
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		27FE7A802463A0ED00A474F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7A7F2463A0ED00A474F4 /* AppDelegate.swift */; };
 		27FE7A822463A0ED00A474F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7A812463A0ED00A474F4 /* SceneDelegate.swift */; };
-		27FE7A842463A0ED00A474F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7A832463A0ED00A474F4 /* ContentView.swift */; };
 		27FE7A862463A0EE00A474F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FE7A852463A0EE00A474F4 /* Assets.xcassets */; };
 		27FE7A892463A0EE00A474F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FE7A882463A0EE00A474F4 /* Preview Assets.xcassets */; };
 		27FE7A8C2463A0EE00A474F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FE7A8A2463A0EE00A474F4 /* LaunchScreen.storyboard */; };
@@ -102,13 +101,14 @@
 		27FE7B452463E55600A474F4 /* UserPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7B442463E55600A474F4 /* UserPostView.swift */; };
 		27FE7B472463EC6900A474F4 /* UserPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7B462463EC6900A474F4 /* UserPostButton.swift */; };
 		27FE7B492463F8B100A474F4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE7B482463F8B100A474F4 /* PostCell.swift */; };
+		928789972465633100586C1B /* UserPostPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928789962465633100586C1B /* UserPostPicture.swift */; };
+		92908C3624667E4D00C240E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92908C3524667E4D00C240E9 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27FE7A7C2463A0ED00A474F4 /* CoderChenWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderChenWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FE7A7F2463A0ED00A474F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27FE7A812463A0ED00A474F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27FE7A832463A0ED00A474F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27FE7A852463A0EE00A474F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FE7A882463A0EE00A474F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27FE7A8B2463A0EE00A474F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,6 +202,8 @@
 		27FE7B442463E55600A474F4 /* UserPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostView.swift; sourceTree = "<group>"; };
 		27FE7B462463EC6900A474F4 /* UserPostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostButton.swift; sourceTree = "<group>"; };
 		27FE7B482463F8B100A474F4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		928789962465633100586C1B /* UserPostPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPicture.swift; sourceTree = "<group>"; };
+		92908C3524667E4D00C240E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,12 +236,12 @@
 		27FE7A7E2463A0ED00A474F4 /* CoderChenWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				27FE7A932463A80400A474F4 /* Resources */,
 				27FE7B3F2463B78600A474F4 /* Model */,
 				27FE7B3A2463B19000A474F4 /* View */,
-				27FE7A932463A80400A474F4 /* Resources */,
+				92908C3324667DDC00C240E9 /* Controller */,
 				27FE7A7F2463A0ED00A474F4 /* AppDelegate.swift */,
 				27FE7A812463A0ED00A474F4 /* SceneDelegate.swift */,
-				27FE7A832463A0ED00A474F4 /* ContentView.swift */,
 				27FE7A852463A0EE00A474F4 /* Assets.xcassets */,
 				27FE7A8A2463A0EE00A474F4 /* LaunchScreen.storyboard */,
 				27FE7A8D2463A0EE00A474F4 /* Info.plist */,
@@ -353,6 +355,7 @@
 				27FE7B3D2463B6AB00A474F4 /* UserTitleView.swift */,
 				27FE7B442463E55600A474F4 /* UserPostView.swift */,
 				27FE7B462463EC6900A474F4 /* UserPostButton.swift */,
+				928789962465633100586C1B /* UserPostPicture.swift */,
 				27FE7B482463F8B100A474F4 /* PostCell.swift */,
 			);
 			path = View;
@@ -364,6 +367,22 @@
 				27FE7B402463B85F00A474F4 /* WeiboModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		92908C3324667DDC00C240E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92908C3424667E2600C240E9 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92908C3424667E2600C240E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92908C3524667E4D00C240E9 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,11 +542,12 @@
 				27FE7B412463B85F00A474F4 /* WeiboModel.swift in Sources */,
 				27FE7B3E2463B6AB00A474F4 /* UserTitleView.swift in Sources */,
 				27FE7B452463E55600A474F4 /* UserPostView.swift in Sources */,
+				928789972465633100586C1B /* UserPostPicture.swift in Sources */,
 				27FE7A802463A0ED00A474F4 /* AppDelegate.swift in Sources */,
 				27FE7A822463A0ED00A474F4 /* SceneDelegate.swift in Sources */,
 				27FE7B492463F8B100A474F4 /* PostCell.swift in Sources */,
 				27FE7B3C2463B1CB00A474F4 /* VipView.swift in Sources */,
-				27FE7A842463A0ED00A474F4 /* ContentView.swift in Sources */,
+				92908C3624667E4D00C240E9 /* HomeVC.swift in Sources */,
 				27FE7B472463EC6900A474F4 /* UserPostButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,7 +38,7 @@ struct UserTitleView: View {
                     .frame(width: 50, height: 26, alignment: .center)
                     .overlay(RoundedRectangle(cornerRadius: 13)
                         .stroke(Color.orange,lineWidth: 1))
-            }
+            }.buttonStyle(BorderlessButtonStyle())
         }
     }
 }
