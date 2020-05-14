@@ -15,14 +15,15 @@ struct HomeVC: View {
     }
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack(spacing:0){
-                RecommendVC().frame(width:UIScreen.main.bounds.width)
-                HotVC().frame(width:UIScreen.main.bounds.width)
+        VStack(spacing:0){
+            NavigationBarTitle()
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack(spacing:0){
+                    RecommendVC().frame(width:UIScreen.main.bounds.width)
+                    HotVC().frame(width:UIScreen.main.bounds.width)
+                }
             }
         }
-        
-        
     }
 }
 

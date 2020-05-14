@@ -381,8 +381,8 @@
 		92908C3324667DDC00C240E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92908C3724668BEC00C240E9 /* Common */,
 				92908C3424667E2600C240E9 /* Home */,
+				92908C3724668BEC00C240E9 /* Common */,
 				92908C3A2466AA9800C240E9 /* Recommend */,
 				92908C3F2466B78E00C240E9 /* Hot */,
 			);
